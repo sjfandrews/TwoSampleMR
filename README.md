@@ -5,6 +5,13 @@ Extended documentation is available here:
 [https://mrcieu.github.io/TwoSampleMR/](https://mrcieu.github.io/TwoSampleMR/)
 
 * * *
+This is a forked version in which the version check at package startup has been removed. 
+To install:
+
+    library(devtools)
+    install_github("sjfandrews/TwoSampleMR")
+
+* * *
 
 Two sample Mendelian randomisation is a technique that makes causal inference about an exposure on an outcome using only summary statistics from a GWAS. This means you obtain SNPs (the instruments) that are robustly associated with your exposure, obtain a set of GWAS summary associations for the outcome you are interested, extract the instrument SNPs from the outcome GWAS, and by contrasting the effect sizes of the SNPs on the exposure with the effect sizes of the SNPs on the outcome one can estimate the causal effect.
 
