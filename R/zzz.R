@@ -13,10 +13,10 @@
 	if (is.character(RCurl::getURL("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"))) {
 	  a <- suppressWarnings(try(readLines("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"), silent=TRUE))
 	} else {
-  	  a <- FALSE
+  	  b <- FALSE
 	}
 
-	if(a == FALSE){
+	if(b == FALSE){
   		packageStartupMessage("\nVersion Number Could not be checked due to no iternet connection.")
 	}else if(!class(a) == 'try-error')
 	{
