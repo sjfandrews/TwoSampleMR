@@ -6,8 +6,7 @@
                 "[>] Check news(package='TwoSampleMR') for bug fixes and updates\n",
                 "[>] By generating access tokens to retrieve data from the MR-Base\n",
                 "    database you consent to having your email address logged on\n",
-                "    our servers. For info on how this is used see logging_info()\n", 
-  		"This is a Forked version to remove version query"
+                "    our servers. For info on how this is used see logging_info()\n"
         )
 
 	if (is.character(RCurl::getURL("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"))) {
