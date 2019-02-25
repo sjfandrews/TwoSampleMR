@@ -7,7 +7,7 @@
                 "[>] By generating access tokens to retrieve data from the MR-Base\n",
                 "    database you consent to having your email address logged on\n",
                 "    our servers. For info on how this is used see logging_info()\n",
-		"[>] This is a forked version that removes the version check at package start up. 
+		"[>] This is a forked version that removes the version check at package start up." 
         )
 
 	#a <- suppressWarnings(try(readLines("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"), silent=TRUE))
