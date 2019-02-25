@@ -6,25 +6,26 @@
                 "[>] Check news(package='TwoSampleMR') for bug fixes and updates\n",
                 "[>] By generating access tokens to retrieve data from the MR-Base\n",
                 "    database you consent to having your email address logged on\n",
-                "    our servers. For info on how this is used see logging_info()\n"
+                "    our servers. For info on how this is used see logging_info()\n", 
+  		"This is a Forked version to remove version query"
         )
 
-	a <- suppressWarnings(try(readLines("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"), silent=TRUE))
+	#a <- suppressWarnings(try(readLines("https://raw.githubusercontent.com/MRCIEU/TwoSampleMR/master/DESCRIPTION"), silent=TRUE))
 
-	if(!class(a) == 'try-error')
-	{
-		latest <- gsub("Version: ", "", a[grep("Version", a)])
-		current = utils::packageDescription('TwoSampleMR')
+	#if(!class(a) == 'try-error')
+	#{
+	#	latest <- gsub("Version: ", "", a[grep("Version", a)])
+	#	current = utils::packageDescription('TwoSampleMR')
 
-		test <- utils::compareVersion(latest, current$Version)
-		if(test == 1)
-		{
-			packageStartupMessage("\nWarning:\nYou are running an old version of the TwoSampleMR package.\n",
-				"This version:   ", current$Version, "\n",
-				"Latest version: ", latest, "\n",
-				"Please consider updating using devtools::install_github('MRCIEU/TwoSampleMR')")
-		}
-	}
+	#	test <- utils::compareVersion(latest, current$Version)
+	#	if(test == 1)
+	#	{
+	#		packageStartupMessage("\nWarning:\nYou are running an old version of the TwoSampleMR package.\n",
+	#			"This version:   ", current$Version, "\n",
+	#			"Latest version: ", latest, "\n",
+	#			"Please consider updating using devtools::install_github('MRCIEU/TwoSampleMR')")
+	#	}
+	#}
 
 
 	op <- options()
